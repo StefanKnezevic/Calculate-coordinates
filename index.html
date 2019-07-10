@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" />
+
+</head>
+<body>
+    <div class="container">
+        <div class="u-full-width" id="form-parent">
+            <h4 id="h4">Make table of your traffic signs of one intersection</h4>
+            <form id="sign-form">
+                <div>
+                    <label for="sign-name"></label>
+                    <input type="text" id="sign-name" class="u-full-width">
+                </div>
+                <div>
+                    <label for="sign-coords"></label>
+                    <input type="text" placeholder="Calculate coordinates" id="sign-coords" class="u-full-width" disabled>
+                </div>
+                <input type="button" value="Calculate coordinates" id="coords-btn">
+                <input type="submit" value="Submit" id="submit-btn">
+            </form>
+        </div>
+        <table class="u-full-width">
+            <thead>
+                <tr>
+                    <td>Sign name</td>
+                    <td>Sign coordinates</td>
+                    <td></td>
+                </tr>
+            </thead>
+            <tbody id="sign-list">
+            </tbody>
+        </table>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
